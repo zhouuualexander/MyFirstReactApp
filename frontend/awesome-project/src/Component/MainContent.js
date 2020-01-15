@@ -1,5 +1,5 @@
 import React from "react"
-
+import Clock from 'react-digital-clock';
 function MainContent() {
     const name = "Alex"
     const date = new Date()
@@ -20,7 +20,7 @@ function MainContent() {
                 This is {name}'s first React App.
             </h1>
             <p className="minute">
-                Now is {around + date.getSeconds()}
+                Now is <Clock/>
             </p>
         </div>
     )
